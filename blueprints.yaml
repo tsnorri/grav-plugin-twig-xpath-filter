@@ -1,0 +1,26 @@
+name: Twig XPath Filter
+version: 0.1.0
+description: Filter content by XPath expressions
+icon: plug
+author:
+  name: Tuukka Norri
+  email: tsnorri@iki.fi
+homepage: https://github.com/tsnorri/grav-plugin-twig-xpath-filter
+keywords: grav, plugin, twig, filter, xpath
+bugs: https://github.com/tsnorri/grav-plugin-twig-xpath-filter/issues
+docs: https://github.com/tsnorri/grav-plugin-twig-xpath-filter/blob/master/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
