@@ -36,7 +36,9 @@ enabled: true
 
 ## Usage
 
-The plugin adds one Twig filter, namely `xpath`. It takes the filtering expression as an argument and returns the HTML from each of the filtered elements concatenated. For example, to select the second `p` element from anywhere in the document:
+The plugin adds one Twig filter, namely `xpath`. It takes the filtering expression as an argument and returns the HTML from each of the filtered elements concatenated. The second argument, if set to true, causes the filter to return an instance of `DOMNodeList` instead; the default is false.
+
+For example, to select the second `p` element from anywhere in the document:
 
 ```
 {{ page.content|xpath('(//p)[2]') }}
